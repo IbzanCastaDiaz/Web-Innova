@@ -1,0 +1,136 @@
+/* ------------------variables */
+:root {
+  --base-color:  #6657ff;
+  --white-color: white;
+  --black-color: #313337;
+  /* Espaciado */
+  --space1: 10px;
+  --space2: 20px;
+  --box: 0 0 20px  #b7afff;
+}
+
+/* ---------------------generales */
+html, body {
+  padding: 0px;
+  margin: 0px;
+  font-size: 12px;
+  font-family: Arial;
+}
+
+
+/* ----------------------navbar */
+nav {
+  background-color: var(--base-color);
+  display: flex;
+  padding: var(--space1);
+  color: var(--white-color);
+  /* separa los elemento cada uno a los extremos */
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+nav img {
+  height: 40px;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  padding-left: 20px;
+  list-style: none;
+}
+
+nav li a {
+  color: var(--black-color);
+  text-decoration: none;
+}
+
+/* -------------Acciones del nav-------- */
+nav li a:hover{
+  color: var(--white-color);
+}
+
+/* -----------------main_section */
+.main_section {
+  /* background-color: red; */
+  display:flex;
+  margin: var(--space2);
+  padding: var(--space2);
+  /* justifica los elementos */
+  justify-content: space-around;
+  /* Alinea todos los elementos verticalmente */
+  align-items: center;
+  box-shadow: var(--box);
+  /* border: 1px; */
+  border-radius:var(--space2);
+  /* width: 1400px; */
+  /* height: 500px; */
+}
+
+.main_section img {
+  border-radius: var(--space2);
+}
+
+.main_section a {
+  font-size: 20px;
+  text-align: center;
+  color: var(--base-color);
+  /* se debe de aplicar no en h1 si no en a para quitar subrallado */
+  /* text-decoration es para sub rallado arriba, abajo en en medio */
+  text-decoration: none;
+}
+.main_section h1:hover{
+  color: var(--black-color);
+}
+
+
+/* ----------------------services */
+.services {
+  /* background-color: blue; */
+  padding: var(--space2);
+  display: flex;
+  /* text-align: center;
+  align-items: center; */
+  position: center;
+
+}
+.service {
+  margin: var(--space2);
+  padding: var(--space2);
+  box-shadow: var(--box);
+  border-radius: var(--space1);
+  /* text-align: center; */
+  /* position: center; */
+}
+.c_service {
+  text-align: center;
+}
+.service img {
+  width: 120px;
+}
+
+.service h1 {
+  color: var(--base-color);
+}
+.services button {
+  background-color: var(--base-color);
+  padding: var(--space1);
+  color: var(--white-color);
+  /* efecto de manita */
+  cursor: pointer;
+  border-radius: var(--space1);
+  width: 100%;
+  font-family: Arial;
+}
+
+.service button:hover {
+  background-color:  #5c5883;
+}
+
+
+
+
+/* -------------aqui esta el fin */
