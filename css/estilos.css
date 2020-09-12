@@ -1,7 +1,7 @@
 /* ------------------variables */
 :root {
-  --base-color:  #a8dd9b;
-  --base-color2: #81a877;
+  --base-color:  #3a60c9;
+  --base-color2: #2a4796;
   --white-color: white;
   --black-color: #313337;
   /* Espaciado */
@@ -16,12 +16,12 @@ html, body {
   margin: 0px;
   font-size: 12px;
   font-family: Arial;
+  text-decoration: none;
 }
-
 
 /* -----------------------------------Header */
 header {
-  background-color: var(--base-color);
+  background: linear-gradient(145deg,#b9dfd5, #3a60c9);
   height: 40px;
   display: flex;
   padding: var(--space1);
@@ -31,7 +31,6 @@ header {
   align-items: center;
   font-size: 14px;
 }
-
 nav img {
   height: 40px;
 }
@@ -39,17 +38,15 @@ nav img {
 header ul {
   display: flex;
 }
-
 header li {
   padding-left: 20px;
   list-style: none;
 }
-
 header li a {
   color: var(--black-color);
   text-decoration: none;
-}
 
+}
 /* -------------Acciones del header-------- */
 header li a:hover{
   color: var(--white-color);
@@ -59,33 +56,47 @@ header img:hover {
   transition: all .5s;
 }
 
-/* --------------------------------encabezado */
+/* --------------------------------inicio */
 .inicio {
-  margin: var(--space2);
-  padding: var(--space2);
+  height: 100vh;
+  background-image: url("../images/md.gif");
+  background-size: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
-  align-items: center;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 2fr 1fr;
 }
-/* .inicio .inicio-img {
-  grid-column: 1;
-} */
-.inicio .inicio-text {
+.inicio-title {
+  grid-column: 2
+}
+.inicio-title h1 {
+  font-size: 40px;
   text-align: center;
+  color: var(--base-color);
+  /* background-color: rgba(0,0,0,.1); */
 }
-.inicio-img img {
-  width: 100%;
+.inicio-button {
+  grid-column: 2;
+  display: grid;
+  grid-template-rows: 60px 60px; 
+  justify-content: center;
+ }
+.inicio-button button {
+  width: 120px;
+  height: 40px;
+  background: var(--base-color)
+  color: var(--white-color)
 }
-.inicio-text a {
-  font-size: 16px;
-  color: var(--base-color2);
-  /* se debe de aplicar no en h1 si no en a para quitar subrallado. text-decoration es para sub rallado arriba, abajo en en medio */
+.inicio-button a {
+  font-weight: 700;
   text-decoration: none;
+  color: var(--base-color);
 }
-.inicio a:hover{
-  color: var(--black-color);
+.inicio button:hover{
   font-size: 17px;
+  transform: scale(1.1);
   transition: all .5s;
 }
 /* -----------------------------------------services */
@@ -133,5 +144,21 @@ header img:hover {
 
 
 
+
+
+/* button flotante */
+.button {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+.button img{
+  height: 50px;
+  width: 50px;
+}
+.button:hover {
+  transform: scale(1.1);
+  transition: all .5s;
+}
 
 /* -------------aqui esta el fin */
