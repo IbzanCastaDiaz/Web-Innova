@@ -190,15 +190,48 @@ header img:hover {
   transform: scale(1.1);
   transition: all .5s;
 }
-
-
-
-
+/* ----------------footer */
+footer {
+  padding: 10px;
+  background: var(--black-color);
+  display:grid;
+  justify-content: center;
+  color: var(--white-color)
+}
+.contacts {
+  display:grid;
+  grid-template; 1fr/ 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+.contact-details {
+  width: 450px;
+  grid-column: 1;
+  text-align: start;
+}
+.figure {
+  width: 450px;
+  grid-column: 2;
+  text-align: end;
+  
+}
+.contacts img {
+  padding: 10px;
+  width: 50px;
+}
+.privacidad {
+  text-align: center;
+  /* width: 50px; */
+}
+.privacidad a {
+  text-decoration: none;
+  color: var(--white-color)
+}
 
 /* button flotante */
 .button {
   position: fixed;
-  bottom: 0;
+  bottom: 20px;
   left: 0;
 }
 .button img{
@@ -209,5 +242,4 @@ header img:hover {
   transform: scale(1.1);
   transition: all .5s;
 }
-
 /* -------------aqui esta el fin */
