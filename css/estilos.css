@@ -18,7 +18,6 @@ html, body {
   font-family: Arial;
   text-decoration: none;
 }
-
 /* -----------------------------------Header */
 header {
   background: linear-gradient(145deg,#b9dfd5, var(--base-color));
@@ -59,17 +58,19 @@ header img:hover {
 /* --------------------------------inicio */
 .inicio {
   height: 100vh;
+  width: 100vw;
   background-image: url("../images/md.gif");
-  background-size: 60%;
+  background-size: 80%;
   background-position: center;
   background-repeat: no-repeat;
   position: fixed;
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
   grid-template-rows: 2fr 1fr;
+  justify-content: center;
 }
 .inicio-title {
-  grid-column: 2
+  grid-column: 2;
 }
 .inicio-title h1 {
   font-size: 40px;
@@ -101,7 +102,7 @@ header img:hover {
 }
 /* -----------------------------------------services */
 .services {
-  max-width: 980px;
+  max-width: 1000px;
   margin: auto;
   padding: var(--space2);
   display: grid;
@@ -133,7 +134,7 @@ header img:hover {
   justify-items: center;
 }
 .service-detail {
-  width: 600px;
+  width: 800px;
   display: grid;
   grid-template: 1fr 1fr 1fr/1fr 1fr;
   align-items: center;
@@ -213,7 +214,6 @@ footer {
   width: 450px;
   grid-column: 2;
   text-align: end;
-  
 }
 .contacts img {
   padding: 10px;
@@ -232,7 +232,7 @@ footer {
 .button {
   position: fixed;
   bottom: 20px;
-  left: 0;
+  left: 75px;
 }
 .button img{
   height: 50px;
