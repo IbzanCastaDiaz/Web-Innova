@@ -7,11 +7,13 @@
       }
     .services {
         max-width: 90%;
-
     }
     .service-detail {
         width: 70%;
       }
+    .service-1, .service-2, .service-3 {
+      width: 700px
+    }
     .contact-details {
         width: 300px;
       }
@@ -33,16 +35,21 @@
     .inicio-title h1 {
         font-size: 30px;
       }
-
-
-      .contact-details {
+      .services {
+        max-width: 80%;
+    }
+    .service-detail {
+       max-width: 50%;
+      }
+    .service-1, .service-2, .service-3 {
+        width: 500px
+      }
+    .contact-details {
         width: 200px;
       }
     .figure {
         width: 250px;
       }
-
-
     .button {
         left: 30px;
       }
@@ -54,44 +61,25 @@
     .inicio-title h1 {
         font-size: 25px;
       }
-
-
-      .services {
-        grid-template-columns: 1fr;
+    .services {
+      max-width: 70%;
+      grid-template-columns: 1fr;
+    }
+    .service img {
+      max-width: 50%;
+    }
+    
+    .service-detail {
+      max-width: 80%;
       }
-      .service img {
-        width: 100px;
+    .service-1, .service-2, .service-3 {
+        max-width: 300px;
       }
       .detail-of-services {
         padding: 50px 0;
       }
-      .service-detail {
-        display: grid;
-        grid-template: .5fr 1fr .5fr 1fr .5fr 1fr  / 1fr;
-      }
-      .service-img1 {
-        grid-row: 1;
-      }
-      .service-text1 {
-        grid-column: 1;
-        grid-row: 2;
-      }
-      .service-img2 {
-        grid-column: 1;
-        grid-row: 3;
-      }
-      .service-text2 {
-        grid-row: 4;
-      }
-      .service-img3 {
-        grid-row: 5;
-      }
-      .service-text3 {
-        grid-column: 1;
-        grid-row: 6;
-      }
       .service-detail img {
-        width: 150px;
+        max-width: 90%;
       }
       
 
@@ -151,5 +139,24 @@
     .inicio {
         background-size: 140%;
       }
-
+      .services {
+        max-width: 50%;
+        grid-template-columns: 1fr;
+      }
+      .service img {
+        max-width: 40%;
+      }
+      
+      .service-detail {
+        max-width: 70%;
+        }
+      .service-1, .service-2, .service-3 {
+          max-width: 200px;
+        }
+        .detail-of-services {
+          padding: 40px 0;
+        }
+        .service-detail img {
+          max-width: 90%;
+        }
 }
