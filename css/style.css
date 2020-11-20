@@ -110,7 +110,7 @@ body {
 #button {
     position: fixed;
     z-index: 3;
-    bottom: 65px;
+    bottom: 75px;
     left: 15px;
   }
 #button img{
